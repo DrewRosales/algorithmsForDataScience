@@ -125,7 +125,7 @@ class sigma_ellipse_plot:
 
         return self.data, self.r_ellipses, self.mu_X, self.mu_Y
 
-
+'''
 if __name__ == '__main__':
     
 
@@ -157,3 +157,4 @@ if __name__ == '__main__':
     plt.legend()
 
     plt.show()
+'''
