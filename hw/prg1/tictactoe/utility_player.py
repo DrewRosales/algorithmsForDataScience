@@ -12,5 +12,8 @@ class UtilityPlayer(ConditionalPlayer):
     # Gets the next move using an utility function
     # and conditional logic for decisive moves
     def get_next_move(self, board: Board) -> int:
-
+        print(board.is_empty())
         # enter code here
+
+    def calculate_utility_function(self, board: Board):
+        print("Foo")

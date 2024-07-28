@@ -2,15 +2,17 @@
 from random_player import RandomPlayer
 from conditional_player import ConditionalPlayer
 from utility_player import UtilityPlayer
-from minimax_player import MinimaxPlayer
-from alpha_beta_player import AlphaBetaPlayer
+#from minimax_player import MinimaxPlayer
+#from alpha_beta_player import AlphaBetaPlayer
 from human_player import HumanPlayer
 from game import Game
 
 # Set the players for the game
 # Note: Change these players to test different agents
 player1 = HumanPlayer(1)
-player2 = AlphaBetaPlayer(2)
+#player2 = RandomPlayer(1)
+#player2 = UtilityPlayer(2)
+player2 = ConditionalPlayer(2)
 
 # Loop until the user chooses to exit the program
 while True:
