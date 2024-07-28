@@ -48,13 +48,13 @@ class ConditionalPlayerTests(unittest.TestCase):
     def test_get_decisive_move_takes_win(self, state, expected_move):
         board = Board(state)
         player = ConditionalPlayer(2)
-        result = player.get_decisive_move(board)
+        result = player.ai_opponent_winning_move(board)
         self.assertEqual(expected_move, result)
 
     def test_get_decisive_move_blocks_win(self):
         board = Board("-XX------")
         player = ConditionalPlayer(1)
-        result = player.get_decisive_move(board)
+        result = player.get_next_move(board)
         self.assertEqual(0, result)
 
     @parameterized.expand([
@@ -72,7 +72,10 @@ class ConditionalPlayerTests(unittest.TestCase):
     def test_get_non_decisive_move(self, state, expected_move):
         board = Board(state)
         player = ConditionalPlayer(2)
-        result = player.get_non_decisive_move(board)
+        result = player.non_decisive_move(board)
+        print(board)
+        print(expected_move, result)
+        print("\n\n")
         self.assertEqual(expected_move, result)
 
 
