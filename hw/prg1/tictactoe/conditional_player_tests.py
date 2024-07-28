@@ -73,9 +73,6 @@ class ConditionalPlayerTests(unittest.TestCase):
         board = Board(state)
         player = ConditionalPlayer(2)
         result = player.non_decisive_move(board)
-        print(board)
-        print(expected_move, result)
-        print("\n\n")
         self.assertEqual(expected_move, result)
 
 
