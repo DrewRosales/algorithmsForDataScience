@@ -10,7 +10,7 @@ from game import Game
 # Set the players for the game
 # Note: Change these players to test different agents
 player1 = HumanPlayer(1)
-#player2 = RandomPlayer(1)
+#player2 = RandomPlayer(2)
 #player2 = UtilityPlayer(2)
 player2 = ConditionalPlayer(2)
 

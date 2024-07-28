@@ -15,5 +15,4 @@ class RandomPlayer(Player):
             move = np.random.randint(0, 8)
             if not board.is_open_space(move):
                 move = -1
-            print('\n\n',move)
         return move

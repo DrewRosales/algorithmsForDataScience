@@ -33,7 +33,7 @@ class Game:
 
                 # Get the current player's next move
                 move = player.get_next_move(self.board)
-
+                print("\n\n GAME: ", move)
                 # Mark the board with their chosen move
                 self.board.mark_space(move, player.mark)
 
