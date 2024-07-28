@@ -16,6 +16,7 @@ class UtilityPlayerTests(unittest.TestCase):
         board = Board(state)
         player = UtilityPlayer(2)
         result = player.get_next_move(board)
+        #print(result)
         self.assertEqual(expected_move, result)
 
     @parameterized.expand([
