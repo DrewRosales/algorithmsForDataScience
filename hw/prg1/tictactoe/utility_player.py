@@ -15,5 +15,21 @@ class UtilityPlayer(ConditionalPlayer):
         print(board.is_empty())
         # enter code here
 
-    def calculate_utility_function(self, board: Board):
-        print("Foo")
+    def get_utility_of_lines(self, board: Board):
+        print("foo")
+
+    def is_line_empty(self, board: Board, line) -> int:
+        for space in line:
+            print(space)
+            if not board.is_open_space(space):
+                return False
+        return True
+
+    def is_line_full(self, board: Board, line) -> int :
+        for space in line:
+            if board.is_open_space(space):
+                return False
+        return True
+
+    def get_utility_of_spaces(board, utility_of_lines) -> int:
+        print("foo")
