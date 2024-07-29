@@ -29,7 +29,6 @@ class UtilityPlayer(ConditionalPlayer):
         utility_occuppied = self.get_utility_of_spaces(board, [0]*8)
         final_utility = np.array(utility_occuppied) + np.array(utility_of_space)
         move = np.argmax(final_utility)
-        print(final_utility)
         return move
         
     def get_line_utility(self, board, line):
